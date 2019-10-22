@@ -27,7 +27,7 @@ public class MainController {
 
     @Autowired
     public MainController(GreetingService helloWorldGreetingServiceImpl,
-                          @Qualifier("helloNikosGreetingServiceImpl") GreetingService greetingServiceNikos,
+                          @Qualifier("helloNikosGreetingService") GreetingService greetingServiceNikos,
                           GreetingService greetingService) {
         this.helloWorldGreetingServiceImpl = helloWorldGreetingServiceImpl;
         this.greetingServiceNikos = greetingServiceNikos;
